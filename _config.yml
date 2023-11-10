@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kangyun Chen (陈康赟)"
+  name             : "Kangyun Chen"
   avatar           : "kangyun_image.png"
   bio              : "Johns Hopkins University"
   location         : "Baltimore, US"
@@ -89,7 +89,7 @@ author:
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            : "kchen127@jh.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
