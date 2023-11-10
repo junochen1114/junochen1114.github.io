@@ -12,7 +12,5 @@ I'm a second year graduate student from [Department of Applied Mathematics and S
 
 I am very fortunate to be advised by [Prof. Mahyar Fazlyab](https://scholar.google.com/citations?user=Y3bmjJwAAAAJ&hl=en) from [Department of Electrical and Computer Engineering](https://engineering.jhu.edu/ece/), Johns Hopkins University. 
 
-You can find my CV here: [XX's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
-
 [Email](mailto:kchen127@jh.edu) / [Github](https://github.com/junochen1114)
 
