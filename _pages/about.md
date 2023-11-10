@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "Kangyun Chen (陈康赟)"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
