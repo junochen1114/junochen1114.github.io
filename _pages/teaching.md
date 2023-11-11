@@ -9,7 +9,7 @@ Johns Hopkins University
 ------
 
 - Grad-Level Course EN.553.613: Applied Statistics and Data Analysis (Fall 2023)
-    - Supervised by [Dr. Sergey Kushnarev](https://engineering.jhu.edu/ams/faculty/sergey-kushnarev/)
+    - Supervised by [Dr. Sergey Kushnarev](https://engineering.jhu.edu/ams/faculty/sergey-kushnarev/) and [Prof. Luana Ruiz](https://luanaruiz9.github.io/)
     - Office hours: Wedn 4-6pm, Wyman S425
 
 - Grad-Level Course EN.553.636: Introduction to Data Science (Spring 2023)
