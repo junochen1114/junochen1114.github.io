@@ -1,17 +1,21 @@
 ---
 layout: archive
 permalink: /projects/
-title: Projects
-description:
-nav: true
+title: "Projects"
+author_profile: true
 ---
 
 
-#### **Research Projects**
-
-<p style="margin-bottom:0.5cm; margin-left: 0.5cm"> </p>
-
+## Research Projects
+------
 
 
-#### **Course Projects**
+
+## Course Projects
+------
+Facial Landmark Detection
+[![Facial Landmark Detection](../images/project_img/facial.png)](https://github.com/RuolingFan/Facial-Landmark-Detection)
+
+------
+
 
