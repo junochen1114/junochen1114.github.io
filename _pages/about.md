@@ -17,4 +17,4 @@ My research intersects machine learning, optimization and control theory, focusi
 My areas of interest include neural network verification, reachability analysis, and optimal control.
 
 Currently, I am very fortunate to work on some interesting projects with
-[Prof. Mahyar Fazlyab](https://scholar.google.com/citations?user=Y3bmjJwAAAAJ&hl=en) at JHU. 
+[Prof. Mahyar Fazlyab](https://scholar.google.com/citations?user=Y3bmjJwAAAAJ&hl=en) at Johns Hopkins. 
