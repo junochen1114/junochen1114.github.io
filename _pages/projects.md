@@ -16,7 +16,7 @@ author_profile: true
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
     <div style="margin: 10px;">
         <a href="https://github.com/RuolingFan/Facial-Landmark-Detection">
-            <img src="../images/project_img/facial.png" alt="Project 1" style="width: 30%;">
+            <img src="../images/project_img/facial.png" alt="Project 1" style="width: 50%;">
         </a>
         <p>Facial Landmark Detection</p>
     </div>
