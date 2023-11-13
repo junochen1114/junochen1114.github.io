@@ -1,5 +1,5 @@
 ---
-title: 'Data-Driven Reachability Analysis'
+title: 'Data-Driven Reachability Analysis v'
 date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
@@ -15,8 +15,7 @@ Our contributions are:
 <details>
 <summary>
 
-## Input-Convex Neural Networks (ICNNs) and  
-
+## Input-Convex Neural Networks (ICNNs) and
 </summary>
 Our method heavily relies on DNs that fulfill specific constraints. These constraints 
 result in DNs with a special property called input-convex, which is formulated as follows:
@@ -26,7 +25,6 @@ result in DNs with a special property called input-convex, which is formulated a
 <summary>
 
 ## Neural Network Representation of Discrete-Time Neural Network-Controlled Systems
-
 </summary>
 text
 </details>
@@ -133,7 +131,6 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 <summary>
 
 # Hidden part: some discarded ideas and results
-
 </summary>
 text
 </details>
