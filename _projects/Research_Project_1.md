@@ -1,6 +1,7 @@
 ---
 title: 'Data-Driven Reachability Analysis / Neural Network Verification'
 date: 2023-11-12
+layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
 # Introduction
