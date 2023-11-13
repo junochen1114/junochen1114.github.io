@@ -1,11 +1,10 @@
 ---
-layout: archive
 title: "Teaching Assistant"
 permalink: /teaching/
 author_profile: true
 ---
 
-Johns Hopkins University
+Johns Hopkins University star
 ------
 
 - Grad-Level Course EN.553.613: Applied Statistics and Data Analysis (Fall 2023)
