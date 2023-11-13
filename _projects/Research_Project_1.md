@@ -84,7 +84,7 @@ Given an ICNN, we train it such that the polytope boundaries match as closely as
 data convex hull, which is done by minimizing the following loss functions:
 
 - Data Inclusion Loss: this part ensures that the polytope contains the dataset. The design of this loss term is intuitive,
-
+with 
 - Volume Minimization Loss: 
 
 - Lipschitz Loss: this part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.

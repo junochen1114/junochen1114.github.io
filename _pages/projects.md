@@ -1,6 +1,7 @@
 ---
 permalink: /projects/
 title: "Projects"
+layout: page
 author_profile: true
 ---
 ## Research Projects
