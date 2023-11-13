@@ -124,4 +124,3 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 </details>
 
 
-
