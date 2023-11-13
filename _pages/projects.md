@@ -1,7 +1,6 @@
 ---
 permalink: /projects/
 title: "Projects"
-layout: page
 author_profile: true
 ---
 ## Research Projects
@@ -22,13 +21,13 @@ author_profile: true
         <a href="https://github.com/kchen127/Self_Supervised_3D_Shape_Reconstruction">
             <img src="../images/project_img/3d_reconstruction.png" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
         </a>
-        <p>MLDL Project: Self-Supervised 3D Shape Reconstruction</p>
+        <p>MLDL Project:<br>Self-Supervised 3D Shape Reconstruction</p>
     </div>
     <div style="margin: 10px; text-align: center;">
         <a href="https://github.com/RuolingFan/Facial-Landmark-Detection">
             <img src="../images/project_img/facial.png" alt="Course Project 2" style="width: 40%; display: block; margin: auto;">
         </a>
-        <p>ML Project: Facial Landmark Detection</p>
+        <p>ML Project: <br>Facial Landmark Detection</p>
     </div>
 </div>
 
