@@ -10,7 +10,7 @@ author_profile: true
 
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
     <div style="margin: 10px; ; text-align: center">
-            <a href="../_projects/Research_Project_1.md">
+            <a href="../projects/data_driven_reachability_analysis">
                 <img src="../images/project_img/nn_verify.gif" alt="Research Project 1" style="width: 65%;">
             </a>
             <p>Data-Driven Reachability Analysis</p>
