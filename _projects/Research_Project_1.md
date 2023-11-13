@@ -1,5 +1,5 @@
 ---
-title: 'Data-Driven Reachability Analysis'
+title: 'Data-Driven Reachability Analysis / Neural Network Verification'
 date: 2023-11-12
 permalink: /projects/data_driven_reachability_analysis
 ---
@@ -42,11 +42,14 @@ From now on we assume that our system is a neural network, denoted as $$S$$, we 
 1. **(Forward Reachability)** Given an initial set $$X$$, find a tight over-approximation of its image $$S(X)$$
 2. **(Backward Reachability)** Given a target set $$Y$$, find a tight over-approximation of its preimage $$S^{-1}(Y)$$
 
+We further assume that both $$X$$ and $$Y$$ are convex polytopes.
 The first problem is well-studied, and there are many existing methods to solve it, including 
-[CROWN](https://proceedings.neurips.cc/paper/2018/hash/d04863f100d59b3eb688a11f95b0ae60-Abstract.html) and [DeepPoly](https://dl.acm.org/doi/pdf/10.1145/3290354)
+[CROWN](https://proceedings.neurips.cc/paper/2018/hash/d04863f100d59b3eb688a11f95b0ae60-Abstract.html) and [DeepPoly](https://dl.acm.org/doi/pdf/10.1145/3290354).
 However, the second problem is much more challenging, especially when the activation function is not injective (e.g. ReLU).
 To develop a general framework on both forward and backward directions, we propose a data-driven approach 
-to solve the two problems. Given a sampled dataset $$Z$$ obtained from either $$S(X)$$ or $$S^{-1}(Y)$$, 
+to solve the two problems. 
+
+Given a sampled dataset $$Z$$ obtained from either $$S(X)$$ or $$S^{-1}(Y)$$, 
 our approach mainly contains two steps:
 1. Approximation: learn the convex hull shape by an ICNN
 2. Verification: verify the approximation via an optimization problem
@@ -58,24 +61,56 @@ Hence, it has the capability to approximate the convex hull of a dataset. This c
 the induced level-set polytope contains the dataset while the polytope volume is minimized.
 
 $$
-\min_{\theta} \quad \text{Vol}(P_{\theta}) \\
-    \text{s.t.} \quad \text{Conv}(X) \subseteq P_{\theta} \\
-                \quad P_{\theta}  = {\{x \in \mathbb{R}^n | f_{\theta}(x) \leq 0\}}
+\begin{aligned}
+\min_{\theta} &\quad \text{Vol}(P_{\theta}) \quad(\text{Volume Minimization Objective})
+    \text{s.t.} &\quad Z \subseteq P_{\theta}  \quad (\text{Set Inclusion Constraint}) \\
+                &\quad P_{\theta}  = {\{x \in \mathbb{R}^n | f_{\theta}(x) \leq 0\}}
+\end{aligned}
 $$
-noting that without loss of generality, we fix the level set value to be 0 since this is a just bias shift on ICNNs.
+
+where $$f_{\theta}$$ is an ICNN with parameters $$\theta$$, and $$Z$$ is the sampled dataset.
+Noting that without loss of generality, we fix the level set value to be $$0$$ since this is a just bias shift on ICNNs.
 
 ## Training
 Given an ICNN, we train it such that the polytope boundaries match as closely as possible to the true
-data convex hull. 
+data convex hull, which is done by minimizing the following loss functions:
+
+- Data Inclusion Loss: this part ensures that the polytope contains the dataset. The design of this loss term is intuitive,
+
+- Volume Minimization Loss:
+
+- Lipschitz Loss: this part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.
+By avoiding the dramatic change of neural network values, the aim of this loss term is to make the optimal value of the following verification optimization problem as small as possible.
 
 ## Verification
+Given a well-trained ICNN $$f$$, we can verify its approximation by solving the following optimization problems:
 - Forward Reachability
+
+$$
+\begin{aligned}
+\max_{x} &\quad f(S(x)) \\
+    \text{s.t.} &\quad x \in X
+\end{aligned}
+$$
+It is notable that both $$f$$ and $$S$$ are neural networks, so is the composition $$S \circ f$$. 
+And the above optimization problem is essentially a neural network verification problem, where many frameworks provide accurate and efficient estimation on the optimal value.
+
 - Backward Reachability
+The backward reachability verification is more tricky, since it involves two neural networks, one occurs in the objective function and the
+other occurs in the constraint.
+$$
+\begin{aligned}
+\max_{x} &\quad f(x) \\
+    \text{s.t.} &\quad AS(x) \leq b \quad (\text{our assumption on convex polytope}) \\
+\end{aligned}
+$$
+Solving this optimization problem is in general intractable. Instead, we relax it.
+The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the problem becomes a neural network verification problem again.
 
 # Results on Forward Reachability Analysis
 
-# Currect and Future Work
-- Efficient Sample Strategy: this is important for preimage approximation. 
+# Current and Future Work
+- Efficient Sample Strategy: this is extremely important for preimage approximation. 
 - Disconnectivity of the preimage set: Due to
 - Verification on the preimage approximation
 
