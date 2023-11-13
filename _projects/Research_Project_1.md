@@ -84,7 +84,7 @@ By avoiding the dramatic change of neural network values, the aim of this loss t
 
 ## Verification
 Given a well-trained ICNN $$f$$, we can verify its approximation by solving the following optimization problems:
-- Forward Reachability
+### Forward Reachability
 
 $$
 \begin{aligned}
@@ -96,7 +96,7 @@ $$
 It is notable that both $$f$$ and $$S$$ are neural networks, so is the composition. 
 And the above optimization problem is essentially a neural network verification problem, where many frameworks provide accurate and efficient estimation on the optimal value.
 
-- Backward Reachability
+### Backward Reachability
 The backward reachability verification is more tricky, since it involves two neural networks, one occurs in the objective function and the
 other occurs in the constraint.
 
