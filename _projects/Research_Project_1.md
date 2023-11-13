@@ -12,12 +12,23 @@ Our contributions are:
 
 # Background
 
-<details><summary>Input-Convex Neural Networks (ICNNs) and  </summary>
+<details>
+<summary>
+
+## Input-Convex Neural Networks (ICNNs) and  
+
+</summary>
 Our method heavily relies on DNs that fulfill specific constraints. These constraints 
 result in DNs with a special property called input-convex, which is formulated as follows:
 </details>
 
-<details><summary>Neural Network Representation of Discrete-Time Neural Network-Controlled Systems</summary>
+<details>
+<summary>
+
+## Neural Network Representation of Discrete-Time Neural Network-Controlled Systems
+
+</summary>
+text
 </details>
 
 
@@ -76,7 +87,7 @@ data convex hull, which is done by minimizing the following loss functions:
 
 - Data Inclusion Loss: this part ensures that the polytope contains the dataset. The design of this loss term is intuitive,
 
-- Volume Minimization Loss:
+- Volume Minimization Loss: 
 
 - Lipschitz Loss: this part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.
 By avoiding the dramatic change of neural network values, the aim of this loss term is to make the optimal value of the following verification optimization problem as small as possible.
@@ -118,7 +129,13 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 
 
 
-<details><summary><h1>Hidden part: some discarded ideas and results</h1></summary>
+<details>
+<summary>
+
+# Hidden part: some discarded ideas and results
+
+</summary>
+text
 </details>
 
 
