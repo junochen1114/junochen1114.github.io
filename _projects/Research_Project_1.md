@@ -62,7 +62,7 @@ the induced level-set polytope contains the dataset while the polytope volume is
 
 $$
 \begin{aligned}
-\min_{\theta} &\quad \text{Vol}(P_{\theta}) \quad(\text{Volume Minimization Objective})
+\min_{\theta} &\quad \text{Vol}(P_{\theta}) \quad(\text{Volume Minimization Objective})\\
     \text{s.t.} &\quad Z \subseteq P_{\theta}  \quad (\text{Set Inclusion Constraint}) \\
                 &\quad P_{\theta}  = {\{x \in \mathbb{R}^n | f_{\theta}(x) \leq 0\}}
 \end{aligned}
@@ -92,18 +92,21 @@ $$
     \text{s.t.} &\quad x \in X
 \end{aligned}
 $$
-It is notable that both $$f$$ and $$S$$ are neural networks, so is the composition $$S \circ f$$. 
+
+It is notable that both $$f$$ and $$S$$ are neural networks, so is the composition. 
 And the above optimization problem is essentially a neural network verification problem, where many frameworks provide accurate and efficient estimation on the optimal value.
 
 - Backward Reachability
 The backward reachability verification is more tricky, since it involves two neural networks, one occurs in the objective function and the
 other occurs in the constraint.
+
 $$
 \begin{aligned}
 \max_{x} &\quad f(x) \\
     \text{s.t.} &\quad AS(x) \leq b \quad (\text{our assumption on convex polytope}) \\
 \end{aligned}
 $$
+
 Solving this optimization problem is in general intractable. Instead, we relax it.
 The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the problem becomes a neural network verification problem again.
 
