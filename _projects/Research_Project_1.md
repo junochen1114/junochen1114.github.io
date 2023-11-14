@@ -7,13 +7,14 @@ permalink: /projects/data_driven_reachability_analysis
 
 <table>
   <tr>
-    <td>
-      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 100%;">
-      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 100%;">
+    <td style="text-align: center;">
+      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 48%; margin-right: 4%;">
+      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 48%;">
       <br>Step 1: Training Procedure | Step 2: Verification
     </td>
   </tr>
 </table>
+
 
 # Introduction
 This project aims to develop a data-driven approach for reachability analysis of neural network-controlled systems.
