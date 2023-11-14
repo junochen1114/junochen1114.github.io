@@ -296,24 +296,25 @@ Some results from the initial approach are presented below:
 <ul style="list-style-type: none;">
   <li>
     <div style="text-align: center;">
-      <strong>Forward Reachability:</strong>
+      Forward Reachability:
       <div>
         <img src="../images/reach_discard/forward_polytope_whole.png" alt="Forward reachability polytope" style="width: 70%; margin: auto;">
-        <p>The bottom figures represent our results for forward reachability.</p>
+        <p>The bottom figures represent our results</p>
       </div>
     </div>
   </li>
   <li>
     <div style="text-align: center;">
-      <strong>Backward Reachability:</strong>
+      Backward Reachability:
       <div>
         <img src="../images/reach_discard/backward_polytope_whole.png" alt="Backward reachability polytope" style="width: 70%; margin: auto;">
-        <p>The bottom figures represent our results for backward reachability.</p>
+        <p>The bottom figures represent our results</p>
       </div>
     </div>
   </li>
 </ul>
 </details>
+
 
 
 
