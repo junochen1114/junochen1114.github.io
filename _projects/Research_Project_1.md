@@ -7,11 +7,8 @@ permalink: /projects/data_driven_reachability_analysis
 
 <table>
   <tr>
-    <td>
-      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 45%; margin-right: 10px;">
-      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 45%;">
-      <br>Step 1: Training Procedure | Step 2: Verification
-    </td>
+    <td style="padding-right: 10px;"><img src="../images/reach_intro/movie.gif" alt="intro_gif" width="100%"><br>Horizon 1: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_intro/verify.png" alt="intro_verify" width="100%"><br>Horizon 1: Verification</td>
   </tr>
 </table>
 
