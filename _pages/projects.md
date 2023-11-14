@@ -17,15 +17,15 @@ author_profile: true
 
 ## Course Projects
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
-    <div style="margin: 10px; text-align: center;">
+    <div style="margin: 5px; text-align: center;">
         <a href="https://github.com/kchen127/Self_Supervised_3D_Shape_Reconstruction">
-            <img src="../images/project_img/3d_reconstruction.png" alt="Course Project 1" style="width: 100%; display: block; margin: auto;">
+            <img src="../images/project_img/3d_reconstruction.png" alt="Course Project 1" style="width: 60%; display: block; margin: auto;">
         </a>
         <p>MLDL Project: Self-Supervised 3D Shape Reconstruction</p>
     </div>
-    <div style="margin: 10px; text-align: center;">
+    <div style="margin: 5px; text-align: center;">
         <a href="https://github.com/RuolingFan/Facial-Landmark-Detection">
-            <img src="../images/project_img/facial.png" alt="Course Project 2" style="width: 100%; display: block; margin: auto;">
+            <img src="../images/project_img/facial.png" alt="Course Project 2" style="width: 60%; display: block; margin: auto;">
         </a>
         <p>ML Project: Facial Landmark Detection</p>
     </div>
