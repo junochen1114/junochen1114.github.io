@@ -83,16 +83,16 @@ Noting that without loss of generality, we fix the level set value to be $$0$$ s
 Given an ICNN, we train it such that the polytope boundary matches as closely as possible to the true
 data convex hull, which is done by minimizing the following loss functions:
 
-#### Data Inclusion Loss
+### Data Inclusion Loss
 This loss ensures that the polytope contains the dataset. The design of this loss term is intuitive,
 with the general idea that all the data points should have function values less than or equal to zero.
 Therefore, one possible choice for the loss term is 
 
-$$ L_{dataInclusion}(z; \theta) =  -\log (1-\text{sigmoid} (f_\theta(z)) ) $$
+$$ L(z; \theta) =  -\log (1-\text{sigmoid} (f_\theta(z)) ) $$
 
-as $$L_{dataInclusion}(z; \theta) \to 0$$ for every $$z \in Z$$, the approximated polytope $$P_{\theta}$$ contains the dataset $$Z$$.
+as $$L(z; \theta) \to 0$$ for every $$z \in Z$$, the approximated polytope $$P_{\theta}$$ contains the dataset $$Z$$.
 
-#### Volume Minimization Loss
+### Volume Minimization Loss
 This is the most challenging part of the training, since it is hard to directly express the volume of a polytope.
 To overcome this difficulty, we introduce the distance of an inner point to the polytope boundary as
 
@@ -112,7 +112,7 @@ Consider a given data point $$z \in Z$$ and unit direction $$v$$, the distance t
 
 $$
 \begin{aligned}
-d_v(z, \partial P_\theta) = \max_{\alpha} & \alpha \\
+d_v(z, \partial P_\theta) = \max_{\alpha} & \quad \alpha \\
     \text{s.t.} &\quad f_\theta (z+\alpha v) \leq 0 \\
                 & \quad \alpha \geq 0
 \end{aligned}
@@ -122,12 +122,13 @@ Based on the convexity of $$f_\theta$$ and the constraints $$f_\theta (q) \leq 0
 Thus, we apply a binary search on $$\alpha$$ to find the largest $$\alpha$$ with $$f_\theta (z+\alpha v) \leq 0$$.
 It is notable that this method is gradient-based and would allow the parent optimization problem minimzing the sum of distances to propagate gradients to update $$\theta$$.
 However, we experimentally find that this does not yield desireable results since the optimal $$\alpha$$ does not provide valuable gradient information for the parent optimization problem.
-To overcome this, after finding the optimal $$\alpha$$, instead of minimizing these $$\alpha$$s with respect to $$\theta$$ and applying backpropagation,
-we maximize the function values at this point. The relation between minimizing $$\alpha$$s can be explained as follows:
+
+To overcome this, after finding the optimal $$\alpha$$, instead of minimizing these $$\alpha$$'s with respect to $$\theta$$ and applying backpropagation,
+we maximize the function values at this point. The intuition behind this is that
+if the boundary moves away from the data point, we should discourage this by enlarging the function value so that the zero level set squeezes towards the data point
 
 
-
-#### Lipschitz Loss
+### Lipschitz Loss
 This part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.
 By avoiding the dramatic change of neural network values, the aim of this loss term is to make the optimal value of the following verification optimization problem as small as possible.
 
