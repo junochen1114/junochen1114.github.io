@@ -27,7 +27,7 @@ Our contributions are:
 <details>
 <summary>
 
-## Input-Convex Neural Networks (ICNNs) and
+## Input-Convex Neural Networks (ICNNs)
 </summary>
 Our method heavily relies on DNs that fulfill specific constraints. These constraints 
 result in DNs with a special property called input-convex, which is formulated as follows:
@@ -179,21 +179,22 @@ We perform our method on Double Integrator model.
 The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html). Figures for the baseline will be updated soon for better comparison.
 <table>
   <tr>
-    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>
-    <td><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Horizon 1: Verification</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Horizon 1: Verification</td>
     <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Horizon 1: Baseline</td>
   </tr>
   <tr>
-    <td><img src="../images/reach_horizon2/movie.gif" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
-    <td><img src="../images/reach_horizon2/verify.png" alt="Caption 5" width="100%"><br>Horizon 2: Verification</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon2/movie.gif" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon2/verify.png" alt="Caption 5" width="100%"><br>Horizon 2: Verification</td>
     <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 6" width="100%"><br>Horizon 2: Baseline</td>
   </tr>
   <tr>
-    <td><img src="../images/reach_horizon3/movie.gif" alt="Caption 7" width="100%"><br>Horizon 3: Training</td>
-    <td><img src="../images/reach_horizon3/verify.png" alt="Caption 8" width="100%"><br>Horizon 3: Verification</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon3/movie.gif" alt="Caption 7" width="100%"><br>Horizon 3: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon3/verify.png" alt="Caption 8" width="100%"><br>Horizon 3: Verification</td>
     <td><img src="../images/reach_horizon3/baseline.png" alt="Caption 9" width="100%"><br>Horizon 3: Baseline</td>
   </tr>
 </table>
+
 
 
 ### Backward Reachability
