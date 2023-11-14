@@ -10,17 +10,15 @@ Our contributions are:
 1. We propose a data-driven approach for fast convex hull approximation utilizing Input-Convex Neural Networks
 2. 
 
-<div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
-    <div style="margin: 10px; text-align: center;">
-        <img src="../images/reach_intro/movie.gif" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
-        <p>Step 1: Training Procedure</p>
-    </div>
-    <div style="margin: 10px; text-align: center;">
-        <img src="../images/reach_intro/verify.png" alt="Course Project 2" style="width: 40%; display: block; margin: auto;">
-        <p>Step 2: Verification</p>
-    </div>
-</div>
-
+<table>
+  <tr>
+    <td>
+      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 45%; vertical-align: middle;">
+      <br>Step 1: Training Procedure | Step 2: Verification
+    </td>
+  </tr>
+</table>
 
 # Background
 
@@ -29,9 +27,9 @@ Our contributions are:
 Our method heavily relies on Input-Convex Neural Networks (ICNNs), which are neural networks with convexity with respect to their inputs:
 
 $$
-\begin{align}\label{eqn:ICNN}
+\begin{align}
 \begin{split}
-    z_{i+1} = g_i(W^{(z)}_i z_i + W^{(y)}_i y_i + b_i), \quad
+    z_{i+1} = g_i(W^{(z)}_i z_i + W^{(y)}_i y_i + b_i), \\
     f_{\theta}(y) = z_k
 \end{split}
 \end{align}
