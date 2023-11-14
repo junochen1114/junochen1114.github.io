@@ -4,6 +4,17 @@ date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
+
+<table>
+  <tr>
+    <td>
+      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 70%; vertical-align: middle;">
+      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 30%; vertical-align: middle;">
+      <br>Step 1: Training Procedure | Step 2: Verification
+    </td>
+  </tr>
+</table>
+
 # Introduction
 This project aims to develop a data-driven approach for reachability analysis of neural network-controlled systems.
 Reachability analysis is crucial in understanding and predicting the behavior of these complex systems, which has broad applications in fields like autonomous vehicles and robotics.
@@ -19,15 +30,6 @@ which significantly enhances computational efficiency while maintaining high acc
 2. Verification via Optimization: The approximations we achieve are verified through an optimization problem, 
 ensuring reliability and robustness in our approach.
 
-<table>
-  <tr>
-    <td>
-      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 70%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 40%; vertical-align: middle;">
-      <br>Step 1: Training Procedure | Step 2: Verification
-    </td>
-  </tr>
-</table>
 
 # Background
 
