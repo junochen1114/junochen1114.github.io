@@ -220,7 +220,7 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 
 # Results
 <details>
-<summary>Blank part: results of fast convex hull approximation in high dimensions[TO BE FILLED]</summary>
+<summary>Blank part: results of fast convex hull approximation in high dimensions [TO BE FILLED]</summary>
 </details>
 
 We perform our method on Double Integrator model. 
@@ -288,7 +288,21 @@ As this part of the research is still in progress, the extent of conservativenes
 
 <details>
 <summary>Hidden part: some discarded ideas and results</summary>
-Our 
+Our early idea is to parameterize polytope for over-approximation and we developed 
+a multi-step training procedure to learn the parameters, motivated by the theory of SVM.
+Due to various reasons, we discard this idea and develop the current method.
+
+Some results of the discarded idea are shown below.
+
+Forward Reachability:
+<img src="../images/forward_polytope_whole.png" alt="forward polytope discard" style="width: 70%">
+<p>Forward Reachability: Bottom figures represent our results</p>
+
+Backward Reachability:
+
+<img src="../images/reach_discard/backward_polytope_whole.png" alt="backward polytope discard" style="width: 70%">
+<p>Backward Reachability: Bottom figures represent our results</p>
+
 </details>
 
 
