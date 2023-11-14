@@ -25,7 +25,7 @@ author_profile: true
     </div>
     <div style="margin: 10px; text-align: center;">
         <a href="https://github.com/RuolingFan/Facial-Landmark-Detection">
-            <img src="../images/project_img/facial.png" alt="Course Project 2" style="width: 70%; display: block; margin: auto;">
+            <img src="../images/project_img/facial.png" alt="Course Project 2" style="width: 75%; display: block; margin: auto;">
         </a>
         <p>ML Project: <br>Facial Landmark Detection</p>
     </div>

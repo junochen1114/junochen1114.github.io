@@ -1,20 +1,29 @@
 ---
-title: 'Data-Driven Reachability Analysis v'
+title: 'Data-Driven Reachability Analysis'
 date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
 # Introduction
-This project aims to 
-Our contributions are:
-1. We propose a data-driven approach for fast convex hull approximation utilizing Input-Convex Neural Networks
-2. 
+This project aims to develop a data-driven approach for reachability analysis of neural network-controlled systems.
+Reachability analysis is crucial in understanding and predicting the behavior of these complex systems, which has broad applications in fields like autonomous vehicles and robotics.
+Traditional methods often face challenges in handling the non-linear and high-dimensional nature of neural network-controlled systems.
+Our project introduces a novel data-driven approach that leverages the power of Input-Convex Neural Networks (ICNNs) for fast convex hull approximation. 
+This method stands out by offering a more scalable and adaptable solution compared to conventional techniques, which are often limited by computational constraints and lack of flexibility.
+
+Our current contributions include:
+
+1. Fast Convex Hull Approximation: We propose a data-driven approach utilizing Input-Convex Neural Networks (ICNNs) for fast convex hull approximation, 
+which significantly enhances computational efficiency while maintaining high accuracy.
+
+2. Verification via Optimization: The approximations we achieve are verified through an optimization problem, 
+ensuring reliability and robustness in our approach.
 
 <table>
   <tr>
     <td>
-      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 100%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 100%; vertical-align: middle;">
+      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 70%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 40%; vertical-align: middle;">
       <br>Step 1: Training Procedure | Step 2: Verification
     </td>
   </tr>
@@ -177,7 +186,11 @@ $$
 Solving this optimization problem is in general intractable. Instead, we relax it.
 The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the problem becomes a neural network verification problem again.
 
-# Results on Forward Reachability Analysis
+# Results
+<details>
+<summary>Hidden part: results of fast convex hull approximation in high dimensions (to be filled)</summary>
+</details>
+
 We perform our method on Double Integrator model. 
 ### Forward Reachability 
 The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
