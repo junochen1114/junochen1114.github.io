@@ -200,18 +200,28 @@ The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entes
 Verification part is still under implementation yet. The baseline method is [INVPROP](https://arxiv.org/abs/2302.01404).
 <table>
   <tr>
-    <td><img src="../images/backreach_horizon1/epoch60.png" alt="Caption 11" width="100%"><br>Horizon 1: Training</td>
-    <td><img src="../images/backreach_horizon1/step1_v.png" alt="Caption 12" width="100%"><br>Horizon 1: Baseline</td>
+    <td>
+      <img src="../images/backreach_horizon1/epoch60.png" alt="Caption 11" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/backreach_horizon1/step1_v.png" alt="Caption 12" style="width: 45%; vertical-align: middle;">
+      <br>Horizon 1: Training | Horizon 1: Baseline
+    </td>
   </tr>
   <tr>
-    <td><img src="../images/backreach_horizon2/epoch46.png" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
-    <td><img src="../images/backreach_horizon2/step2_v.png" alt="Caption 6" width="100%"><br>Horizon 2: Baseline</td>
+    <td>
+      <img src="../images/backreach_horizon2/epoch46.png" alt="Caption 4" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/backreach_horizon2/step2_v.png" alt="Caption 6" style="width: 45%; vertical-align: middle;">
+      <br>Horizon 2: Training | Horizon 2: Baseline
+    </td>
   </tr>
   <tr>
-    <td><img src="../images/backreach_horizon3/epoch70.png" alt="Caption 7" width="100%"><br>Horizon 3: Training</td>
-    <td><img src="../images/backreach_horizon3/step3_v.png" alt="Caption 9" width="100%"><br>Horizon 3: Baseline</td>
+    <td>
+      <img src="../images/backreach_horizon3/epoch70.png" alt="Caption 7" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/backreach_horizon3/step3_v.png" alt="Caption 9" style="width: 45%; vertical-align: middle;">
+      <br>Horizon 3: Training | Horizon 3: Baseline
+    </td>
   </tr>
 </table>
+
 
 
 # Current and Future Work
