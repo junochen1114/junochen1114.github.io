@@ -80,14 +80,48 @@ where $$f_{\theta}$$ is an ICNN with parameters $$\theta$$, and $$Z$$ is the sam
 Noting that without loss of generality, we fix the level set value to be $$0$$ since this is a just bias shift on ICNNs.
 
 ## Training
-Given an ICNN, we train it such that the polytope boundaries match as closely as possible to the true
+Given an ICNN, we train it such that the polytope boundary matches as closely as possible to the true
 data convex hull, which is done by minimizing the following loss functions:
 
-- Data Inclusion Loss: this part ensures that the polytope contains the dataset. The design of this loss term is intuitive,
-with 
-- Volume Minimization Loss: 
+- **Data Inclusion Loss**: 
+this loss ensures that the polytope contains the dataset. The design of this loss term is intuitive,
+with the general idea that all the data points should have function values less than or equal to zero.
+Therefore, one possible choice for the loss term is 
 
-- Lipschitz Loss: this part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.
+$$ L_{dataInclusion}(z; \theta) =  -\log (1-\text{sigmoid} (f_\theta(z)) ) $$
+
+as $$L_{dataInclusion}(z; \theta) \to 0$$ for every $$z \in Z$$, the approximated polytope $$P_{\theta}$$ contains the dataset $$Z$$.
+- **Volume Minimization Loss**: 
+this is the most challenging part of the training, since it is hard to directly express the volume of a polytope.
+To overcome this difficulty, we introduce the distance of an inner point to the polytope boundary as
+
+$$
+\begin{aligned}
+d(z, \partial P_\theta) = \max_{q} & \quad ||q-z||^2  \\
+    \text{s.t.} &\quad f_\theta (q) \leq 0 \\
+\end{aligned}
+$$
+
+and the volume of the polytope can be expressed as $$\sum_{z \in Z} d(z, \partial P_\theta)$$.
+
+However, the above problem is still hard to solve, since it is a non-convex optimization problem. We propose several approximate forms that are
+much more tractable, where the following method is the most efficient one:
+
+Consider a given data point $$z \in Z$$ and unit direction $$v$$, the distance to the polytope boundary can be expressed as
+
+$$
+\begin{aligned}
+d_v(z, \partial P_\theta) = \max_{alpha} & \alpha \\
+    \text{s.t.} &\quad f_\theta (z+\alpha v) \leq 0 \\
+                & \quad \alpha \geq 0
+\end{aligned}
+$$
+
+Based on the convexity of $$f_\theta$$ and the constraints $$f_\theta (q) \leq 0$$, it's fair to assume that $$f_\theta (z+\alpha v)$$ is positive for large enough $$\alpha$$.
+Thus, we apply a binary search on $$\alpha$$ to find the largest $$\alpha$$ with $$f_\theta (z+\alpha v) \leq 0$$.
+It is notable that this method is gradient-based and would allow the parent optimization problem minimzing the sum of distances to propagate gradients to $$\theta$$.
+
+- **Lipschitz Loss**: this part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.
 By avoiding the dramatic change of neural network values, the aim of this loss term is to make the optimal value of the following verification optimization problem as small as possible.
 
 ## Verification
