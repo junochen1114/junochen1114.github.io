@@ -167,7 +167,7 @@ We perform our method on Double Integrator model. The baseline method is [Automa
 
 <table>
   <tr>
-    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Training</td>
+    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%" loop=infinite><br>Training</td>
     <td><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Verification</td>
     <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Baseline</td>
   </tr>
@@ -177,9 +177,9 @@ We perform our method on Double Integrator model. The baseline method is [Automa
     <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 6" width="100%"><br>Baseline</td>
   </tr>
   <tr>
-    <td><img src="../images/reach_horizon2/movie.gif" alt="Caption 7" width="100%"><br>Training</td>
-    <td><img src="../images/reach_horizon2/verify.png" alt="Caption 8" width="100%"><br>Verification</td>
-    <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 9" width="100%"><br>Baseline</td>
+    <td><img src="../images/reach_horizon3/movie.gif" alt="Caption 7" width="100%"><br>Training</td>
+    <td><img src="../images/reach_horizon3/verify.png" alt="Caption 8" width="100%"><br>Verification</td>
+    <td><img src="../images/reach_horizon3/baseline.png" alt="Caption 9" width="100%"><br>Baseline</td>
   </tr>
 </table>
 
