@@ -293,16 +293,18 @@ Our initial approach involved parameterizing a polytope for over-approximation, 
 <br><br>
 Some results from the initial approach are presented below:
 
-<div style="text-align: center;">
+<div style="text-align: center; margin-bottom: 20px;">
   <img src="../images/reach_discard/forward_polytope_whole.png" alt="Forward reachability polytope" style="width: 70%; margin: auto;">
   <p>Forward Reachability: The bottom figures represent our results.</p>
 </div>
 
-<div style="text-align: center;">
+<div style="text-align: center; margin-bottom: 20px;">
   <img src="../images/reach_discard/backward_polytope_whole.png" alt="Backward reachability polytope" style="width: 70%; margin: auto;">
   <p>Backward Reachability: The bottom figures represent our results.</p>
 </div>
 </details>
+
+
 
 
 
