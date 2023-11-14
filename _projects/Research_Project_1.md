@@ -5,15 +5,11 @@ layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
 
-<table>
-  <tr>
-    <td style="text-align: center;">
-      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 48%; margin-right: 4%;">
-      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 48%;">
-      <br>Step 1: Training Procedure | Step 2: Verification
-    </td>
-  </tr>
-</table>
+<div style="text-align: center;">
+    <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 49%; display: inline-block; vertical-align: middle;">
+    <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 49%; display: inline-block; vertical-align: middle;">
+    <br>Step 1: Training Procedure | Step 2: Verification
+</div>
 
 
 # Introduction
