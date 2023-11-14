@@ -292,6 +292,7 @@ As this part of the research is still in progress, the extent of conservativenes
 Our initial approach involved parameterizing a polytope for over-approximation, developing a multi-step training procedure inspired by the theory of Support Vector Machines (SVM). Due to various reasons, this idea was eventually discarded in favor of the method currently being pursued.
 <br><br>
 Some results from the initial approach are presented below:
+<br><br>
 
 <div style="text-align: center; margin-bottom: 20px;">
   <img src="../images/reach_discard/forward_polytope_whole.png" alt="Forward reachability polytope" style="width: 70%; margin: auto;">
