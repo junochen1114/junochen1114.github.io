@@ -5,20 +5,17 @@ layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
 <div class="container">
-    <div class="image-container">
+    <div class="image">
         <img src="../images/reach_intro/movie.gif" alt="Left Image" style="width: 150px; height: auto;">
     </div>
-    <div class="arrow-container">
-        <!-- You can use an image for the arrow or create one using CSS -->
-        →→→→
-    </div>
-    <div class="image-container">
+    <div class="arrow">→→→→</div>
+    <div class="image">
         <img src="../images/reach_intro/verify.png" alt="Right Image" style="width: 150px; height: auto;">
     </div>
 </div>
 
 # Introduction
-This projects
+This project aims to 
 Our contributions are:
 1. We propose a data-driven approach for fast convex hull approximation utilizing Input-Convex Neural Networks (ICNNs)
 2. 
@@ -177,7 +174,7 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 # Results on Forward Reachability Analysis
 We perform our method on Double Integrator model. 
 ### Forward Reachability 
-The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
+The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html). Figures for the baseline will be updated soon for better comparison.
 <table>
   <tr>
     <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>
@@ -201,11 +198,11 @@ The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entes
 Verification part is still under implementation yet. The baseline method is [INVPROP](https://arxiv.org/abs/2302.01404).
 <table>
   <tr>
-    <td><img src="../images/backreach_horizon1/epoch43.png" alt="Caption 11" width="100%"><br>Horizon 1: Training</td>
+    <td><img src="../images/backreach_horizon1/epoch60.png" alt="Caption 11" width="100%"><br>Horizon 1: Training</td>
     <td><img src="../images/backreach_horizon1/step1_v.png" alt="Caption 12" width="100%"><br>Horizon 1: Baseline</td>
   </tr>
   <tr>
-    <td><img src="../images/backreach_horizon2/epoch44.png" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
+    <td><img src="../images/backreach_horizon2/epoch46.png" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
     <td><img src="../images/backreach_horizon2/step2_v.png" alt="Caption 6" width="100%"><br>Horizon 2: Baseline</td>
   </tr>
   <tr>
@@ -233,7 +230,7 @@ Also, current verification methods are not exact. Since this part is not done ye
 
 # Hidden part: some discarded ideas and results
 </summary>
-text
+Our 
 </details>
 
 
