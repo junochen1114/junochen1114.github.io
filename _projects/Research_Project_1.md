@@ -43,15 +43,6 @@ and $$g_i$$ are convex and non-decreasing nonlinear activation functions (e.g. R
 
 ### [Neural Network Representation of Discrete-Time Neural Network-Controlled Systems](https://proceedings.mlr.press/v211/entesari23a.html)
 
-<details>
-  <summary>
-    <h2>
-      Title
-    </h2>
-  </summary>
-  content
-</details>
-
 This paper shows that a discrete-time neural network-controlled system can be exactly represented by a neural network.
 
 $$
@@ -59,7 +50,7 @@ $$
 
 $$
 
-where $$x_k \in \mathbb{R}^n$$ is the state at time step $$k$$, $$\pi$$ is a neural network, $$A, B$$ and $$c$$ are system dynamics.
+where $$x_k \in \mathbb{R}^n$$ is the state at time step $$k$$, $$F$$ and $$\pi$$ are two neural networks, $$A, B$$ and $$c$$ are system dynamics.
 
 # Problem Formulation
 Based on the above background, the closed-loop system can be exactly represented by a neural network,
@@ -215,7 +206,6 @@ The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entes
 </table>
 
 
-
 ### Backward Reachability (Under Implementation)
 Verification part is still not completed yet. The baseline method is [INVPROP](https://arxiv.org/abs/2302.01404).
 <table>
@@ -255,7 +245,7 @@ Currect solution for other papers to reduce conservativeness is partitioning. Ho
 we need to train a new ICNN for each partition.
 
 - Verification on the preimage approximation: we relax the preimage approximation problem and hence introduce conservativeness.
-Also, current verification methods are not exact. Since this part is not done yet, we are not sure how much conservativeness we introduce. 
+Since this part is not done yet, we are not sure how much conservativeness we introduce. 
 
 <details>
 <summary>Hidden part: some discarded ideas and results</summary>
