@@ -22,7 +22,8 @@ This project aims to develop a data-driven approach for reachability analysis of
 Reachability analysis is crucial in understanding and predicting the behavior of these complex systems, which has broad applications in fields like autonomous vehicles and robotics.
 Traditional methods often face challenges in handling the non-linear and high-dimensional nature of neural network-controlled systems.
 Our project introduces a novel data-driven approach that leverages the power of Input-Convex Neural Networks (ICNNs) for fast convex hull approximation. 
-This method stands out by offering a more scalable and adaptable solution compared to conventional techniques, which are often limited by computational constraints and lack of flexibility.
+This method stands out as it offers a more scalable and adaptable solution compared to conventional techniques, 
+the latter often being limited by computational constraints and lack of flexibility.
 
 Our current contributions include:
 
@@ -246,17 +247,17 @@ Verification part is still not completed yet. The baseline method is [INVPROP](h
 
 
 # Current and Future Work
-- Efficient Sample Strategy: this is extremely important for preimage approximation. Since we don't have a priori knowledge on the preimage set, 
-we usually need to sample a large number of points to cover the preimage set. However, this is not efficient and we are working on this. An ideal
+- Efficient Sample Strategy: this is extremely important for preimage approximation. Since we do not have a *priori* knowledge on the preimage set, 
+we usually need to sample a large number of points to cover the preimage set. However, this is not efficient; we are working on this. An ideal
 solution is to sample the points on the boundary of the image/preimage set, which is hard to obtain. Another solution is 
-to make sure uniformly sampling points in the image/preimage set, which is also very challenging.
+to ensure that points are uniformly sampled in the image/preimage set, which is also very challenging.
 
 - Disconnectivity of the preimage set: due to the non-injectivity of the activation function, the preimage set can be disconnected.
-Currect solution for other papers to reduce conservativeness is partitioning. However, this is not efficient under our framework since
+The current solution proposed in other papers for reducing conservativeness is partitioning. However, this is not efficient under our framework since
 we need to train a new ICNN for each partition.
 
 - Verification on the preimage approximation: we relax the preimage approximation problem and hence introduce conservativeness.
-Since this part is not done yet, we are not sure how much conservativeness we introduce. 
+As this part of the research is still in progress, the extent of conservativeness introduced remains to be determined.
 
 <details>
 <summary>Hidden part: some discarded ideas and results</summary>
