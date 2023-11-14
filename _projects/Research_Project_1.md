@@ -295,7 +295,8 @@ Due to various reasons, we discard this idea and develop the current method.
 Some results of the discarded idea are shown below.
 
 Forward Reachability:
-<img src="../images/forward_polytope_whole.png" alt="forward polytope discard" style="width: 70%">
+
+<img src="../images/reach_discard/forward_polytope_whole.png" alt="forward polytope discard" style="width: 70%">
 <p>Forward Reachability: Bottom figures represent our results</p>
 
 Backward Reachability:
