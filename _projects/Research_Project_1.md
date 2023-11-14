@@ -4,15 +4,17 @@ date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
-<div class="container">
-    <div class="image">
-        <img src="../images/reach_intro/movie.gif" alt="Left Image" style="width: 150px; height: auto;">
+<div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+    <div style="margin: 10px; text-align: center;">
+            <img src="../images/reach_intro/movie.gif" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
+        <p>Step 1: Training Procedure</p>
     </div>
-    <div class="arrow">→→→→</div>
-    <div class="image">
-        <img src="../images/reach_intro/verify.png" alt="Right Image" style="width: 150px; height: auto;">
+    <div style="margin: 10px; text-align: center;">
+            <img src="../images/reach_intro/verify.png" alt="Course Project 2" style="width: 40%; display: block; margin: auto;">
+        <p>Step 2: Verification</p>
     </div>
 </div>
+
 
 # Introduction
 This project aims to 
