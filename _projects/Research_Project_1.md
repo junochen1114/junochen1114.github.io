@@ -6,28 +6,24 @@ permalink: /projects/data_driven_reachability_analysis
 ---
 
 <style>
+  .flex-container {
+    display: flex;
+    justify-content: space-around; /* This will add space around the items */
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line on smaller screens */
+  }
+
   .image-container {
-    box-sizing: border-box;
     padding: 5px;
+    box-sizing: border-box;
+    max-width: 45%; /* Sets a max-width for larger screens */
   }
 
   .image-container img {
     max-width: 100%;
     height: auto;
-    display: block; /* ensures no extra space is below the image */
-    margin: 0 auto; /* centers the image in its container */
-  }
-
-  @media only screen and (min-width: 600px) {
-    .flex-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .image-container {
-      flex: 1; /* equally divides the space for each image */
-      margin: 0 10px; /* adds some space between the images */
-    }
+    display: block;
+    margin: 0 auto; /* Centers the image */
   }
 </style>
 
@@ -42,6 +38,7 @@ permalink: /projects/data_driven_reachability_analysis
 <div style="text-align: center;">
   Step 1: Training Procedure | Step 2: Verification
 </div>
+
 
 
 # Introduction
