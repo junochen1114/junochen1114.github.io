@@ -63,13 +63,13 @@ where $$x_k \in \mathbb{R}^n$$ is the state at time step $$k$$, $$F$$ and $$\pi$
 Based on the above background, the closed-loop system can be exactly represented by a neural network,
 
 $$
-    x_{k+1} = f(x_k) 
+    x_{k+1} = F(x_k) 
 $$
 
 hence the state at time step $$k$$ can be represented by $$k$$-time composition of the neural network, as a new neural network, in terms of the initial state $$x_0$$:
 
 $$
-    x_k = f^k(x_0)
+    x_k = F^k(x_0)
 $$
 
 This displays that multiple-step reachability analysis can be done starting at $$x_0$$ by multiple-step composition of the neural network, which is still a neural network.
