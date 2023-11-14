@@ -6,44 +6,43 @@ permalink: /projects/data_driven_reachability_analysis
 ---
 
 <style>
-  @media only screen and (min-width: 600px) {
-    .image-container {
-      flex: 1;
-      padding: 5px;
-      box-sizing: border-box;
-    }
-    .image-container img {
-      width: 100%;
-      height: auto;
-      max-height: 300px;
-    }
+  .image-container {
+    box-sizing: border-box;
+    padding: 5px;
   }
 
-  @media only screen and (max-width: 599px) {
-    .image-container {
-      width: 100%; /* Makes the container take full width on small screens */
-      padding: 5px 0; /* Adjusts padding for small screens */
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* ensures no extra space is below the image */
+    margin: 0 auto; /* centers the image in its container */
+  }
+
+  @media only screen and (min-width: 600px) {
+    .flex-container {
+      display: flex;
+      justify-content: center;
     }
-    .image-container img {
-      width: auto; /* Allows the image to maintain its aspect ratio */
-      max-width: 100%; /* Ensures the image is not wider than the screen */
-      height: auto;
-      margin: 0 auto; /* Centers the image */
+
+    .image-container {
+      flex: 1; /* equally divides the space for each image */
+      margin: 0 10px; /* adds some space between the images */
     }
   }
 </style>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <div class="image-container">
-        <img src="../images/reach_intro/movie.gif" alt="intro_gif">
-    </div>
-    <div class="image-container">
-        <img src="../images/reach_intro/verify.png" alt="intro_verify">
-    </div>
+<div class="flex-container">
+  <div class="image-container">
+    <img src="../images/reach_intro/movie.gif" alt="intro_gif">
+  </div>
+  <div class="image-container">
+    <img src="../images/reach_intro/verify.png" alt="intro_verify">
+  </div>
 </div>
 <div style="text-align: center;">
-    Step 1: Training Procedure | Step 2: Verification
+  Step 1: Training Procedure | Step 2: Verification
 </div>
+
 
 # Introduction
 This project aims to develop a data-driven approach for reachability analysis of neural network-controlled systems.
