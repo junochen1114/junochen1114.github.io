@@ -6,15 +6,14 @@ permalink: /projects/data_driven_reachability_analysis
 ---
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
     <div style="margin: 10px; text-align: center;">
-            <img src="../images/reach_intro/movie.gif" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
+        <img src="../images/reach_intro/movie.gif" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
         <p>Step 1: Training Procedure</p>
     </div>
     <div style="margin: 10px; text-align: center;">
-            <img src="../images/reach_intro/verify.png" alt="Course Project 2" style="width: 40%; display: block; margin: auto;">
+        <img src="../images/reach_intro/verify.png" alt="Course Project 2" style="width: 40%; display: block; margin: auto;">
         <p>Step 2: Verification</p>
     </div>
 </div>
-
 
 # Introduction
 This project aims to 
@@ -176,7 +175,7 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 # Results on Forward Reachability Analysis
 We perform our method on Double Integrator model. 
 ### Forward Reachability 
-The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html). Figures for the baseline will be updated soon for better comparison.
+The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
 <table>
   <tr>
     <td style="padding-right: 10px;"><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>

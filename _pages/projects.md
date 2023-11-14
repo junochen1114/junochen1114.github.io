@@ -16,18 +16,20 @@ author_profile: true
 
 
 ## Course Projects
-<table>
-  <tr>
-    <td>
-      <a href="https://github.com/kchen127/Self_Supervised_3D_Shape_Reconstruction" target="_blank">
-        <img src="../images/project_img/3d_reconstruction.png" alt="MLDL Project:<br>Self-Supervised 3D Shape Reconstruction" style="width: 45%; vertical-align: middle; margin-right: 10px;">
-      </a>
-      <a href="https://github.com/RuolingFan/Facial-Landmark-Detection" target="_blank">
-        <img src="../images/project_img/facial.png" alt="ML Project: <br>Facial Landmark Detection" style="width: 45%; vertical-align: middle;">
-      </a>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+    <div style="margin: 10px; text-align: center;">
+        <a href="https://github.com/kchen127/Self_Supervised_3D_Shape_Reconstruction">
+            <img src="../images/project_img/3d_reconstruction.png" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
+        </a>
+        <p>MLDL Project:<br>Self-Supervised 3D Shape Reconstruction</p>
+    </div>
+    <div style="margin: 10px; text-align: center;">
+        <a href="https://github.com/RuolingFan/Facial-Landmark-Detection">
+            <img src="../images/project_img/facial.png" alt="Course Project 2" style="width: 60%; display: block; margin: auto;">
+        </a>
+        <p>ML Project: <br>Facial Landmark Detection</p>
+    </div>
+</div>
 
 
 
