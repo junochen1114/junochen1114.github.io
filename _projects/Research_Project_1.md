@@ -6,14 +6,14 @@ permalink: /projects/data_driven_reachability_analysis
 ---
 <div class="container">
     <div class="image-container">
-        <img src="../images/reach_intro/movie.gif" alt="Left Image">
+        <img src="../images/reach_intro/movie.gif" alt="Left Image" style="width: 150px; height: auto;">
     </div>
     <div class="arrow-container">
         <!-- You can use an image for the arrow or create one using CSS -->
-        →
+        →→→→
     </div>
     <div class="image-container">
-        <img src="../images/reach_intro/verify.png" alt="Right Image">
+        <img src="../images/reach_intro/verify.png" alt="Right Image" style="width: 150px; height: auto;">
     </div>
 </div>
 
@@ -101,7 +101,7 @@ This loss ensures that the polytope contains the dataset. The design of this los
 with the general idea that all the data points should have function values less than or equal to zero.
 Therefore, one possible choice for the loss term is 
 
-$$ L(z; \theta) =  -\log (1-\text{sigmoid} (f_\theta(z)) ) $$
+$$ L(z; \theta) =  \text{sigmoid} (f_\theta(z)) $$
 
 as $$L(z; \theta) \to 0$$ for every $$z \in Z$$, the approximated polytope $$P_{\theta}$$ contains the dataset $$Z$$.
 
@@ -140,6 +140,7 @@ To overcome this, after finding the optimal $$\alpha$$, instead of minimizing th
 we maximize the function values at this point. The intuition behind this is that
 if the boundary moves away from the data point, we should discourage this by enlarging the function value so that the zero level set squeezes towards the data point.
 
+$$ L(z; \theta) =  -\text{sigmoid} (f_\theta(z+\alpha^* v))$$
 
 ### Lipschitz Loss
 This part is for ease of the following verification step by regularizing the Lipschitz constant of the ICNN.
@@ -174,9 +175,9 @@ Solving this optimization problem is in general intractable. Instead, we relax i
 The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the problem becomes a neural network verification problem again.
 
 # Results on Forward Reachability Analysis
-We perform our method on Double Integrator model. The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
-### Forward Reachability
-
+We perform our method on Double Integrator model. 
+### Forward Reachability 
+The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
 <table>
   <tr>
     <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>
@@ -197,15 +198,35 @@ We perform our method on Double Integrator model. The baseline method is [Automa
 
 
 ### Backward Reachability
-Verification part is not done yet.
-
+Verification part is still under implementation yet. The baseline method is [INVPROP](https://arxiv.org/abs/2302.01404).
+<table>
+  <tr>
+    <td><img src="../images/backreach_horizon1/epoch43.png" alt="Caption 11" width="100%"><br>Horizon 1: Training</td>
+    <td><img src="../images/backreach_horizon1/step1_v.png" alt="Caption 12" width="100%"><br>Horizon 1: Baseline</td>
+  </tr>
+  <tr>
+    <td><img src="../images/backreach_horizon2/epoch44.png" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
+    <td><img src="../images/backreach_horizon2/step2_v.png" alt="Caption 6" width="100%"><br>Horizon 2: Baseline</td>
+  </tr>
+  <tr>
+    <td><img src="../images/backreach_horizon3/epoch70.png" alt="Caption 7" width="100%"><br>Horizon 3: Training</td>
+    <td><img src="../images/backreach_horizon3/step3_v.png" alt="Caption 9" width="100%"><br>Horizon 3: Baseline</td>
+  </tr>
+</table>
 
 
 # Current and Future Work
-- Efficient Sample Strategy: this is extremely important for preimage approximation. 
-- Disconnectivity of the preimage set: Due to
-- Verification on the preimage approximation
+- Efficient Sample Strategy: this is extremely important for preimage approximation. Since we don't have a priori knowledge on the preimage set, 
+we usually need to sample a large number of points to cover the preimage set. However, this is not efficient and we are working on this. An ideal
+solution is to sample the points on the boundary of the image/preimage set, which is hard to obtain. Another solution is 
+to make sure uniformly sampling points in the image/preimage set, which is also very challenging.
 
+- Disconnectivity of the preimage set: due to the non-injectivity of the activation function, the preimage set can be disconnected.
+Currect solution for other papers to reduce conservativeness is partitioning. However, this is not efficient under our framework since
+we need to train a new ICNN for each partition.
+
+- Verification on the preimage approximation: we relax the preimage approximation problem and hence introduce conservativeness.
+Also, current verification methods are not exact. Since this part is not done yet, we are not sure how much conservativeness we introduce. 
 
 <details>
 <summary>
