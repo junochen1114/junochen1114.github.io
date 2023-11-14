@@ -4,6 +4,7 @@ date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
+
 # Introduction
 This projects
 Our contributions are:
@@ -125,7 +126,7 @@ However, we experimentally find that this does not yield desireable results sinc
 
 To overcome this, after finding the optimal $$\alpha$$, instead of minimizing these $$\alpha$$'s with respect to $$\theta$$ and applying backpropagation,
 we maximize the function values at this point. The intuition behind this is that
-if the boundary moves away from the data point, we should discourage this by enlarging the function value so that the zero level set squeezes towards the data point
+if the boundary moves away from the data point, we should discourage this by enlarging the function value so that the zero level set squeezes towards the data point.
 
 
 ### Lipschitz Loss
@@ -161,12 +162,37 @@ Solving this optimization problem is in general intractable. Instead, we relax i
 The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the problem becomes a neural network verification problem again.
 
 # Results on Forward Reachability Analysis
+We perform our method on Double Integrator model. The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
+### Forward Reachability
+
+<table>
+  <tr>
+    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Training</td>
+    <td><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Verification</td>
+    <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Baseline</td>
+  </tr>
+  <tr>
+    <td><img src="../images/reach_horizon2/movie.gif" alt="Caption 4" width="100%"><br>Training</td>
+    <td><img src="../images/reach_horizon2/verify.png" alt="Caption 5" width="100%"><br>Verification</td>
+    <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 6" width="100%"><br>Baseline</td>
+  </tr>
+  <tr>
+    <td><img src="../images/reach_horizon2/movie.gif" alt="Caption 7" width="100%"><br>Training</td>
+    <td><img src="../images/reach_horizon2/verify.png" alt="Caption 8" width="100%"><br>Verification</td>
+    <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 9" width="100%"><br>Baseline</td>
+  </tr>
+</table>
+
+
+### Backward Reachability
+Verification part is not done yet.
+
+
 
 # Current and Future Work
 - Efficient Sample Strategy: this is extremely important for preimage approximation. 
 - Disconnectivity of the preimage set: Due to
 - Verification on the preimage approximation
-
 
 
 <details>
