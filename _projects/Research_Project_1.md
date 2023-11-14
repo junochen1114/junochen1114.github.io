@@ -167,7 +167,7 @@ We perform our method on Double Integrator model. The baseline method is [Automa
 
 <table>
   <tr>
-    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%" loop=infinite><br>Training</td>
+    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Training</td>
     <td><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Verification</td>
     <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Baseline</td>
   </tr>
