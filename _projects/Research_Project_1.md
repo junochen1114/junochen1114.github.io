@@ -8,8 +8,8 @@ permalink: /projects/data_driven_reachability_analysis
 <table>
   <tr>
     <td>
-      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 45%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 45%; vertical-align: middle;">
+      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 45%; margin-right: 10px;">
+      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 45%;">
       <br>Step 1: Training Procedure | Step 2: Verification
     </td>
   </tr>
