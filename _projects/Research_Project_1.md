@@ -288,22 +288,21 @@ As this part of the research is still in progress, the extent of conservativenes
 
 <details>
 <summary>Hidden part: some discarded ideas and results</summary>
-Our early idea is to parameterize polytope for over-approximation and we developed 
-a multi-step training procedure to learn the parameters, motivated by the theory of SVM.
-Due to various reasons, we discard this idea and develop the current method.
+Our initial approach involved parameterizing a polytope for over-approximation, 
+developing a multi-step training procedure inspired by the theory of Support Vector Machines (SVM).
+Due to various reasons, this idea was eventually discarded in favor of the method currently being pursued.
 
-Some results of the discarded idea are shown below.
+Some results from the initial approach are presented below:
 
-- Forward Reachability:\
+- **Forward Reachability:**  
+  ![Forward reachability polytope](../images/reach_discard/forward_polytope_whole.png)  
+  *Figure: The bottom figures represent our results for forward reachability.*
 
-<img src="../images/reach_discard/forward_polytope_whole.png" alt="forward polytope discard" style="width: 70%">
-<p>Forward Reachability: Bottom figures represent our results</p>
-
-- Backward Reachability:\
-
-<img src="../images/reach_discard/backward_polytope_whole.png" alt="backward polytope discard" style="width: 70%">
-<p>Backward Reachability: Bottom figures represent our results</p>
+- **Backward Reachability:**  
+  ![Backward reachability polytope](../images/reach_discard/backward_polytope_whole.png)  
+  *Figure: The bottom figures represent our results for backward reachability.*
 
 </details>
+
 
 
