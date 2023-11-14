@@ -8,8 +8,8 @@ permalink: /projects/data_driven_reachability_analysis
 <table>
   <tr>
     <td>
-      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 70%; vertical-align: middle;">
-      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 30%; vertical-align: middle;">
+      <img src="../images/reach_intro/movie.gif" alt="intro_gif" style="width: 100%;">
+      <img src="../images/reach_intro/verify.png" alt="intro_verify" style="width: 100%;">
       <br>Step 1: Training Procedure | Step 2: Verification
     </td>
   </tr>
@@ -190,7 +190,7 @@ The key idea is to replace $$S(x)$$ with some terms containing $$x$$, then the p
 
 # Results
 <details>
-<summary>Hidden part: results of fast convex hull approximation in high dimensions (to be filled)</summary>
+<summary>Blank part: results of fast convex hull approximation in high dimensions[TO BE FILLED]</summary>
 </details>
 
 We perform our method on Double Integrator model. 
@@ -198,19 +198,19 @@ We perform our method on Double Integrator model.
 The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entesari23a.html).
 <table>
   <tr>
-    <td style="padding-right: 10px;"><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>
-    <td style="padding-right: 10px;"><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Horizon 1: Verification</td>
-    <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Horizon 1: Baseline</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon1/movie.gif" alt="h1_train" width="100%"><br>Horizon 1: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon1/verify.png" alt="h1_verify" width="100%"><br>Horizon 1: Verification</td>
+    <td><img src="../images/reach_horizon1/baseline.png" alt="h1_base" width="100%"><br>Horizon 1: Baseline</td>
   </tr>
   <tr>
-    <td style="padding-right: 10px;"><img src="../images/reach_horizon2/movie.gif" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
-    <td style="padding-right: 10px;"><img src="../images/reach_horizon2/verify.png" alt="Caption 5" width="100%"><br>Horizon 2: Verification</td>
-    <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 6" width="100%"><br>Horizon 2: Baseline</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon2/movie.gif" alt="h2_train" width="100%"><br>Horizon 2: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon2/verify.png" alt="h2_verify" width="100%"><br>Horizon 2: Verification</td>
+    <td><img src="../images/reach_horizon2/baseline.png" alt="h2_base" width="100%"><br>Horizon 2: Baseline</td>
   </tr>
   <tr>
-    <td style="padding-right: 10px;"><img src="../images/reach_horizon3/movie.gif" alt="Caption 7" width="100%"><br>Horizon 3: Training</td>
-    <td style="padding-right: 10px;"><img src="../images/reach_horizon3/verify.png" alt="Caption 8" width="100%"><br>Horizon 3: Verification</td>
-    <td><img src="../images/reach_horizon3/baseline.png" alt="Caption 9" width="100%"><br>Horizon 3: Baseline</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon3/movie.gif" alt="h3_train" width="100%"><br>Horizon 3: Training</td>
+    <td style="padding-right: 10px;"><img src="../images/reach_horizon3/verify.png" alt="h3_verify" width="100%"><br>Horizon 3: Verification</td>
+    <td><img src="../images/reach_horizon3/baseline.png" alt="h3_base" width="100%"><br>Horizon 3: Baseline</td>
   </tr>
 </table>
 
@@ -220,22 +220,22 @@ Verification part is still not completed yet. The baseline method is [INVPROP](h
 <table>
   <tr>
     <td>
-      <img src="../images/backreach_horizon1/epoch60.png" alt="Caption 11" style="width: 45%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/backreach_horizon1/step1_v.png" alt="Caption 12" style="width: 45%; vertical-align: middle;">
+      <img src="../images/backreach_horizon1/epoch60.png" alt="backh1_train" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/backreach_horizon1/step1_v.png" alt="backh1_base" style="width: 45%; vertical-align: middle;">
       <br>Horizon 1: Training | Horizon 1: Baseline
     </td>
   </tr>
   <tr>
     <td>
-      <img src="../images/backreach_horizon2/epoch46.png" alt="Caption 4" style="width: 45%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/backreach_horizon2/step2_v.png" alt="Caption 6" style="width: 45%; vertical-align: middle;">
+      <img src="../images/backreach_horizon2/epoch46.png" alt="backh2_train" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/backreach_horizon2/step2_v.png" alt="backh2_base" style="width: 45%; vertical-align: middle;">
       <br>Horizon 2: Training | Horizon 2: Baseline
     </td>
   </tr>
   <tr>
     <td>
-      <img src="../images/backreach_horizon3/epoch70.png" alt="Caption 7" style="width: 45%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/backreach_horizon3/step3_v.png" alt="Caption 9" style="width: 45%; vertical-align: middle;">
+      <img src="../images/backreach_horizon3/epoch70.png" alt="backh3_train" style="width: 45%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/backreach_horizon3/step3_v.png" alt="backh3_base" style="width: 45%; vertical-align: middle;">
       <br>Horizon 3: Training | Horizon 3: Baseline
     </td>
   </tr>
