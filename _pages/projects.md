@@ -19,7 +19,7 @@ author_profile: true
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
     <div style="margin: 10px; text-align: center;">
         <a href="https://github.com/kchen127/Self_Supervised_3D_Shape_Reconstruction">
-            <img src="../images/project_img/3d_reconstruction.png" alt="Course Project 1" style="width: 70%; display: block; margin: auto;">
+            <img src="../images/project_img/3d_reconstruction.png" alt="Course Project 1" style="width: 60%; display: block; margin: auto;">
         </a>
         <p>MLDL Project:<br>Self-Supervised 3D Shape Reconstruction</p>
     </div>

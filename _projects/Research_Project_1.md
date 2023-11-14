@@ -13,8 +13,8 @@ Our contributions are:
 <table>
   <tr>
     <td>
-      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 45%; vertical-align: middle; margin-right: 10px;">
-      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 45%; vertical-align: middle;">
+      <img src="../images/reach_intro/movie.gif" alt="Caption 11" style="width: 100%; vertical-align: middle; margin-right: 10px;">
+      <img src="../images/reach_intro/verify.png" alt="Caption 12" style="width: 100%; vertical-align: middle;">
       <br>Step 1: Training Procedure | Step 2: Verification
     </td>
   </tr>
@@ -27,12 +27,8 @@ Our contributions are:
 Our method heavily relies on Input-Convex Neural Networks (ICNNs), which are neural networks with convexity with respect to their inputs:
 
 $$
-\begin{align}
-\begin{split}
-    z_{i+1} = g_i(W^{(z)}_i z_i + W^{(y)}_i y_i + b_i), \\
-    f_{\theta}(y) = z_k
-\end{split}
-\end{align}
+z_{i+1} = g_i(W^{(z)}_i z_i + W^{(y)}_i y_i + b_i), \\
+f_{\theta}(y) = z_k
 $$
 
 where $$z_0, W^{(z)}_0 \equiv 0$$, all $$W^{(z)}_{1:k-1}$$ are non-negative, 
