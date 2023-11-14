@@ -286,25 +286,31 @@ we need to train a new ICNN for each partition.
 - Verification on the preimage approximation: we relax the preimage approximation problem and hence introduce conservativeness.
 As this part of the research is still in progress, the extent of conservativeness introduced remains to be determined.
 
+
 <details>
 <summary>Hidden part: some discarded ideas and results</summary>
 Our initial approach involved parameterizing a polytope for over-approximation, developing a multi-step training procedure inspired by the theory of Support Vector Machines (SVM). Due to various reasons, this idea was eventually discarded in favor of the method currently being pursued.
-
+<br><br>
 Some results from the initial approach are presented below:
 
-<ul>
+<ul style="list-style-type: none;">
   <li>
-    <strong>Forward Reachability:</strong><br>
-    <img src="../images/reach_discard/forward_polytope_whole.png" alt="Forward reachability polytope" style="width: 70%">
-    <p>The bottom figures represent our results for forward reachability.</p>
+    <div style="text-align: center;">
+      <strong>Forward Reachability:</strong><br>
+      <img src="../images/reach_discard/forward_polytope_whole.png" alt="Forward reachability polytope" style="width: 70%; margin: auto;">
+      <p>The bottom figures represent our results for forward reachability.</p>
+    </div>
   </li>
   <li>
-    <strong>Backward Reachability:</strong><br>
-    <img src="../images/reach_discard/backward_polytope_whole.png" alt="Backward reachability polytope" style="width: 70%">
-    <p>The bottom figures represent our results for backward reachability.</p>
+    <div style="text-align: center;">
+      <strong>Backward Reachability:</strong><br>
+      <img src="../images/reach_discard/backward_polytope_whole.png" alt="Backward reachability polytope" style="width: 70%; margin: auto;">
+      <p>The bottom figures represent our results for backward reachability.</p>
+    </div>
   </li>
 </ul>
 </details>
+
 
 
 
