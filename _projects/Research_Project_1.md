@@ -4,6 +4,12 @@ date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
+# Introduction
+This project aims to 
+Our contributions are:
+1. We propose a data-driven approach for fast convex hull approximation utilizing Input-Convex Neural Networks
+2. 
+
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
     <div style="margin: 10px; text-align: center;">
         <img src="../images/reach_intro/movie.gif" alt="Course Project 1" style="width: 40%; display: block; margin: auto;">
@@ -15,31 +21,45 @@ permalink: /projects/data_driven_reachability_analysis
     </div>
 </div>
 
-# Introduction
-This project aims to 
-Our contributions are:
-1. We propose a data-driven approach for fast convex hull approximation utilizing Input-Convex Neural Networks (ICNNs)
-2. 
 
 # Background
 
-<details>
-<summary>
+### [Input-Convex Neural Networks (ICNNs)](https://arxiv.org/abs/1609.07152)
 
-## Input-Convex Neural Networks (ICNNs)
-</summary>
-Our method heavily relies on DNs that fulfill specific constraints. These constraints 
-result in DNs with a special property called input-convex, which is formulated as follows:
+Our method heavily relies on Input-Convex Neural Networks (ICNNs), which are neural networks with convexity with respect to their inputs:
+
+$$
+\begin{align}\label{eqn:ICNN}
+\begin{split}
+    z_{i+1} = g_i(W^{(z)}_i z_i + W^{(y)}_i y_i + b_i), \quad
+    f_{\theta}(y) = z_k
+\end{split}
+\end{align}
+$$
+
+where $$z_0, W^{(z)}_0 \equiv 0$$, all $$W^{(z)}_{1:k-1}$$ are non-negative, 
+$$\theta=\{W^{(y)}_{0:k-1}, W^{(z)}_{1:k-1}, b_{0:k-1} \}$$ are the parameters, 
+and $$g_i$$ are convex and non-decreasing nonlinear activation functions (e.g. ReLU).
+
+### [Neural Network Representation of Discrete-Time Neural Network-Controlled Systems](https://proceedings.mlr.press/v211/entesari23a.html)
+
+<details>
+  <summary>
+    <h2>
+      Title
+    </h2>
+  </summary>
+  content
 </details>
 
-<details>
-<summary>
+This paper shows that a discrete-time neural network-controlled system can be exactly represented by a neural network.
 
-## Neural Network Representation of Discrete-Time Neural Network-Controlled Systems
-</summary>
-text
-</details>
+$$
+    x_{k+1} = A x_k + B \pi(x_k) + c = F(x_k)
 
+$$
+
+where $$x_k \in \mathbb{R}^n$$ is the state at time step $$k$$, $$\pi$$ is a neural network, $$A, B$$ and $$c$$ are system dynamics.
 
 # Problem Formulation
 Based on the above background, the closed-loop system can be exactly represented by a neural network,
@@ -105,7 +125,7 @@ as $$L(z; \theta) \to 0$$ for every $$z \in Z$$, the approximated polytope $$P_{
 
 ### Volume Minimization Loss
 This is the most challenging part of the training, since it is hard to directly express the volume of a polytope.
-To overcome this difficulty, we introduce the distance of an inner point to the polytope boundary as
+To overcome this difficulty, we introduce the distance of an inner point $$z$$ to the polytope boundary as
 
 $$
 \begin{aligned}
@@ -114,10 +134,10 @@ d(z, \partial P_\theta) = \max_{q} & \quad ||q-z||^2  \\
 \end{aligned}
 $$
 
-and the volume of the polytope can be expressed as $$\sum_{z \in Z} d(z, \partial P_\theta)$$.
+and the volume of the polytope can be expressed as $$\sum_{z} d(z, \partial P_\theta)$$.
 
 However, the above problem is still hard to solve, since it is a non-convex optimization problem. We propose several approximate forms that are
-much more tractable, where the following method is the most efficient one:
+much more tractable, where the following method is the most efficient one.
 
 Consider a given data point $$z \in Z$$ and unit direction $$v$$, the distance to the polytope boundary can be expressed as
 
@@ -196,8 +216,8 @@ The baseline method is [AutomatedReach](https://proceedings.mlr.press/v211/entes
 
 
 
-### Backward Reachability
-Verification part is still under implementation yet. The baseline method is [INVPROP](https://arxiv.org/abs/2302.01404).
+### Backward Reachability (Under Implementation)
+Verification part is still not completed yet. The baseline method is [INVPROP](https://arxiv.org/abs/2302.01404).
 <table>
   <tr>
     <td>
@@ -238,10 +258,7 @@ we need to train a new ICNN for each partition.
 Also, current verification methods are not exact. Since this part is not done yet, we are not sure how much conservativeness we introduce. 
 
 <details>
-<summary>
-
-# Hidden part: some discarded ideas and results
-</summary>
+<summary>Hidden part: some discarded ideas and results</summary>
 Our 
 </details>
 
