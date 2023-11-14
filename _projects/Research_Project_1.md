@@ -4,6 +4,18 @@ date: 2023-11-12
 layout: archive
 permalink: /projects/data_driven_reachability_analysis
 ---
+<div class="container">
+    <div class="image-container">
+        <img src="../images/reach_intro/movie.gif" alt="Left Image">
+    </div>
+    <div class="arrow-container">
+        <!-- You can use an image for the arrow or create one using CSS -->
+        →
+    </div>
+    <div class="image-container">
+        <img src="../images/reach_intro/verify.png" alt="Right Image">
+    </div>
+</div>
 
 # Introduction
 This projects
@@ -167,19 +179,19 @@ We perform our method on Double Integrator model. The baseline method is [Automa
 
 <table>
   <tr>
-    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Training</td>
-    <td><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Verification</td>
-    <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Baseline</td>
+    <td><img src="../images/reach_horizon1/movie.gif" alt="Caption 1" width="100%"><br>Horizon 1: Training</td>
+    <td><img src="../images/reach_horizon1/verify.png" alt="Caption 2" width="100%"><br>Horizon 1: Verification</td>
+    <td><img src="../images/reach_horizon1/baseline.png" alt="Caption 3" width="100%"><br>Horizon 1: Baseline</td>
   </tr>
   <tr>
-    <td><img src="../images/reach_horizon2/movie.gif" alt="Caption 4" width="100%"><br>Training</td>
-    <td><img src="../images/reach_horizon2/verify.png" alt="Caption 5" width="100%"><br>Verification</td>
-    <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 6" width="100%"><br>Baseline</td>
+    <td><img src="../images/reach_horizon2/movie.gif" alt="Caption 4" width="100%"><br>Horizon 2: Training</td>
+    <td><img src="../images/reach_horizon2/verify.png" alt="Caption 5" width="100%"><br>Horizon 2: Verification</td>
+    <td><img src="../images/reach_horizon2/baseline.png" alt="Caption 6" width="100%"><br>Horizon 2: Baseline</td>
   </tr>
   <tr>
-    <td><img src="../images/reach_horizon3/movie.gif" alt="Caption 7" width="100%"><br>Training</td>
-    <td><img src="../images/reach_horizon3/verify.png" alt="Caption 8" width="100%"><br>Verification</td>
-    <td><img src="../images/reach_horizon3/baseline.png" alt="Caption 9" width="100%"><br>Baseline</td>
+    <td><img src="../images/reach_horizon3/movie.gif" alt="Caption 7" width="100%"><br>Horizon 3: Training</td>
+    <td><img src="../images/reach_horizon3/verify.png" alt="Caption 8" width="100%"><br>Horizon 3: Verification</td>
+    <td><img src="../images/reach_horizon3/baseline.png" alt="Caption 9" width="100%"><br>Horizon 3: Baseline</td>
   </tr>
 </table>
 
